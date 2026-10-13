@@ -1,14 +1,15 @@
 {
-  "latestVersion": "1.0.1",
-  "releaseDate": "2026-09-29",
+  "latestVersion": "1.0.2",
+  "releaseDate": "2026-10-13",
   "downloadUrl": "https://apps.autodesk.com/RVT/en/Detail/Index?id=6992819327351306371",
   "changelog": [
-    "- Read-only columns are now detected correctly in schedules that mix several families.",
-    "- Parameters driven by a family formula are marked read-only in the panel and in Excel.",
-    "- Parameters are matched by ID instead of name, so similarly named parameters are no longer confused.",
-    "- Import no longer reports false warnings for empty cells on elements that do not have the parameter.",
-    "- Rows of elements from linked models are exported as read-only and skipped on import.",
-    "- Import now reports read-only cells you edited, so changes are never dropped silently."
+    "- Fixed Excel export failing in Revit 2025 and 2026 with a \"File In Use or Locked\" message.",
+    "- When an Excel file cannot be saved, the message now shows the actual reason.",
+    "- Grouped column headings are exported with their original structure.",
+    "- Import works correctly with duplicate column headings (e.g. Door and Frame \"Material\").",
+    "- Exporting an empty schedule shows a clear message instead of creating an empty file.",
+    "- Import checks that column headings were not renamed or removed in Excel.",
+    "- Edits in rows of elements from linked models are listed as not applied."
   ],
   "criticalUpdate": false,
   "minimumVersion": "1.0.0"
